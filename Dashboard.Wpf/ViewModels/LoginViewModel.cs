@@ -14,7 +14,7 @@ namespace Dashboard.Wpf.ViewModels;
 
 public class LoginViewModel : ViewModelBase
 {
-    private string _username;
+    private string _username = "admin";
     private SecureString _password;
     private string _errorMessage;
     private bool _isViewVisible;
@@ -72,7 +72,7 @@ public class LoginViewModel : ViewModelBase
 
     private void ExecuteRecoverPasswordCommand(string username, string password)
     {
-        
+
     }
 
     private bool CanExecuteLoginCommand(object obj)
